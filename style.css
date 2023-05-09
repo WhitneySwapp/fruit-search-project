@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:focus {
+ outline-color: rgb(255, 94, 0);
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(236, 200, 38), rgb(255, 94, 0));
+}
+
+input {
+ border: 0 none;
+}
+
+.search-container {
+ width: 400px;
+ position: relative;
+ margin: 200px auto;
+}
+
+.search-container input,
+.search-container .suggestions {
+  width: 100%;
+  background: rgba(225,225,225, 0.3);
+  text-align: left;
+}
+
+.search-container input {
+  background: rgba(255, 255, 255, 0.2);;
+ height: 60px;
+ padding: 0 10px;
+}
+
+.search-container .suggestions {
+   position: absolute;
+   top: 60px;
+}
+
+ul {
+  /* TODO -done */
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 1px 2px 0 rgba(36, 11, 175, 0.2);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+ul.has-suggestions {
+  /* TODO -done*/
+  display: block;
+}
+
+ul li {
+  /* TODO -done*/
+  padding: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+ul li:hover {
+  /* TODO -done*/
+  background-color: rgb(255, 94, 0);
+}
+
+input {
+   /* TODO -done*/
+   border-bottom: 2px solid rgb(255, 94, 0);
+}
+
+/* Code Referenced: */
+/* https://codepen.io/ChrisBarberRiley/pen/eYdBXPP */
+/* https://codepen.io/mey_mnry/pen/QWqPvox?editors=1010 */
+/* https://www.youtube.com/watch?v=pdyFf1ugVfk */
+/* https://dev.to/codingnepal/search-bar-with-autocomplete-search-suggestions-in-javascript-32dn */
+/* https://www.codehim.com/vanilla-javascript/javascript-autocomplete-dropdown/ */
+/* https://www.w3schools.com/css/css3_gradients.asp */
+/* Post by FelipeAls on 3/16/13: https://stackoverflow.com/questions/15449280/making-text-background-transparent-but-not-text-itself */
